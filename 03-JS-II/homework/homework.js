@@ -6,7 +6,7 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
   if ( x === y ){
-    return x && y;
+    return x || y;
   } else if ( x > y) {
     return x;
   } else{
@@ -147,7 +147,7 @@ function operadoresLogicos(num1, num2, num3) {
   } else if (num1 > num2 && num1 > num3 && num1 > 0){
     return "Número 1 es mayor y positivo";
   } else if ( num3 > num1 && num3 > num2){
-    nuevovalor = num3 + 1
+    nuevovalor = num3 + 1;
     return nuevovalor;
   } else {
     return false;
@@ -208,8 +208,8 @@ function doWhile(numero) {
   //Usar el bucle do ... while.
 var i = 0;
 do {
-  i += 1;
   numero += 5;
+  i++;
 } while ( i < 8);
 return numero;
 }
